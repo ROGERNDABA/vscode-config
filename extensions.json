@@ -1,1 +1,25 @@
-
+{
+    "recomendations": [
+        "2gua.rainbow-brackets",
+        "dbaeumer.jshint",
+        "dsznajder.es7-react-js-snippets",
+        "eamodio.gitlens",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "HookyQR.beautify",
+        "huizhou.githd",
+        "ilich8086.coldfusion",
+        "jzmstrjp.color-the-tag-name",
+        "KamasamaK.vscode-cfml",
+        "ms-vscode.vscode-typescript-tslint-plugin",
+        "ms-vsliveshare.vsliveshare",
+        "naumovs.color-highlight",
+        "ortus-solutions.vscode-coldbox",
+        "robertohuertasm.vscode-icons",
+        "SketchPunk.ColdFusion",
+        "streetsidesoftware.code-spell-checker",
+        "stuart.unique-window-colors",
+        "vincaslt.highlight-matching-tag",
+        "Zyst.Egoist-One",
+    ]
+}
