@@ -1,0 +1,55 @@
+{
+	"class_hpp": {
+		"prefix": "fclass",
+		"body": [
+			"#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP",
+			"#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP",
+			"\n#include <iostream>",
+			"#include <fstream>",
+			"\nclass ${TM_FILENAME_BASE} {",
+			"\tprivate:",
+			"\tpublic:",
+			"\t\tclass ${TM_FILENAME_BASE}Exception : std::exception {",
+			"\t\t\tpublic:",
+			"\t\t\t\t${TM_FILENAME_BASE}Exception(void);",
+			"\t\t\t\t${TM_FILENAME_BASE}Exception(${TM_FILENAME_BASE}Exception const &);",
+			"\t\t\t\t${TM_FILENAME_BASE}Exception &operator=(${TM_FILENAME_BASE}Exception const &);",
+			"\t\t\t\tvirtual const char *what() const throw();",
+			"\t\t};",
+			"\n\t\t${TM_FILENAME_BASE}();",
+			"\t\t${TM_FILENAME_BASE}(${TM_FILENAME_BASE} const &);",
+			"\t\t${TM_FILENAME_BASE} &operator=(${TM_FILENAME_BASE} const &);",
+			"\t\t~${TM_FILENAME_BASE}();",
+			"};",
+			"\n#endif //${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_HPP"
+		]
+	},
+	"class_cpp": {
+		"prefix": "pclass",
+		"body": [
+			"#include \"${TM_FILENAME_BASE}.hpp\"",
+			"\n${TM_FILENAME_BASE}::${TM_FILENAME_BASE}() {}",
+			"\n${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception::${TM_FILENAME_BASE}Exception() {}",
+			"\n${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception::${TM_FILENAME_BASE}Exception(${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception const& copy) {",
+			"\t*this = copy;",
+			"}",
+			"\nconst char* ${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception::what() const throw() {",
+			"\treturn (\"\\033[31mSome Exception\\033[0m\");",
+			"}",
+			"\n${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception& ${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception::operator=(${TM_FILENAME_BASE}::${TM_FILENAME_BASE}Exception const& rhs) {",
+			"\tif (this != &rhs) {",
+			"\t}",
+			"\treturn *this;",
+			"}",
+			"\n${TM_FILENAME_BASE}::~${TM_FILENAME_BASE}() {}",
+			"\n${TM_FILENAME_BASE}::${TM_FILENAME_BASE}(${TM_FILENAME_BASE} const& copy) {",
+			"\t*this = copy;",
+			"};",
+			"\n${TM_FILENAME_BASE}& ${TM_FILENAME_BASE}::operator=(${TM_FILENAME_BASE} const& rhs) {",
+			"\tif (this != &rhs) {",
+			"\t}",
+			"\treturn *this;",
+			"}",
+		]
+	}
+}
