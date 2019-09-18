@@ -1,8 +1,11 @@
 {
-    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Material Theme Darker",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.fontLigatures": true,
     "explorer.decorations.badges": false,
-    "editor.fontSize": 11,
+    "editor.fontSize": 10,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wrappingIndent": "same",
     "editor.wordWrapColumn": 100,
@@ -44,6 +47,5 @@
     "emmet.triggerExpansionOnTab": true,
     "html.format.wrapLineLength": 500,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, ColumnLimit: 0}",
-    "C_Cpp.intelliSenseCacheSize": 0,
-    "workbench.colorTheme": "Horizon Bold"
+    "C_Cpp.intelliSenseCacheSize": 0
 }
