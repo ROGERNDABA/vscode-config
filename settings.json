@@ -48,5 +48,7 @@
     "html.format.wrapLineLength": 500,
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, ColumnLimit: 0}",
     "C_Cpp.intelliSenseCacheSize": 0,
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
+    "workbench.panel.defaultLocation": "right",
+    "git.autofetch": true
 }
