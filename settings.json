@@ -50,5 +50,12 @@
     "C_Cpp.intelliSenseCacheSize": 0,
     "editor.insertSpaces": false,
     "workbench.panel.defaultLocation": "right",
-    "git.autofetch": true
+    "git.autofetch": true,
+    "terminal.integrated.fontFamily": "consolas",
+    "workbench.colorCustomizations": {
+        "terminal.border": "#ac6cd6",
+        "terminal.background": "#000000",
+        "tab.activeBackground": "#5d3e72",
+        "terminal.ansiGreen": "#1eff00"
+    }
 }
